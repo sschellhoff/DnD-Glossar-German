@@ -1,0 +1,130 @@
+\topic{Aktionen im Kampf}{combatactions}
+\begin{itemize}
+\item \linktopic{Angriff}{attacking}
+\item \linktopic{Zauber wirken}{castingspell}
+\item \linktopic{Spurt}{dash}
+\item \linktopic{Rückzug}{disengage}
+\item \linktopic{Ausweichen}{dodge}
+\item \linktopic{Gegenstand verwenden}{useitem}
+\item \linktopic{Helfen}{help}
+\item \linktopic{Suchen}{search}
+\item \linktopic{Verstecken}{hide}
+\item \linktopic{Vorbereiten}{ready}
+\end{itemize}
+
+
+
+\topic{Angriff}{attacking}
+\begin{itemize}
+\item $W20 + Bonus + Proficiency >= AC$
+
+\item $Hitpoints -= Schadensw\ddot{u}rfel + Modifikator$
+\end{itemize}
+
+Ein Angriff funktioniert in mehreren Schritten:
+
+\begin{enumerate}
+
+\item Angriffswurf: Der Angreifer würfelt einen 20-seitigen Würfel (W20) und addiert seinen Angriffsbonus. Der Angriffsbonus setzt sich aus dem relevanten Attributsmodifikator (z. B. Stärke für Nahkampfwaffen oder Geschicklichkeit für Finesse- oder Fernkampfwaffen) und dem Proficiency Bonus zusammen, falls der Charakter mit der Waffe geübt ist. Ein Würfelergebnis von 1 verfehlt das Ziel immer. Ein Würfelergebnis von 20 trifft immer \linktopic{crit}{kritisch}.
+\item Trefferwert vergleichen: Das Ergebnis der Angriffsrolle wird mit der Rüstungsklasse (Armor Class, AC) des Ziels verglichen. Wenn das Ergebnis gleich oder höher ist als die AC, trifft der Angriff.
+\item Schadenswurf: Wenn der Angriff trifft, würfelt der Angreifer den Schaden, den die Waffe verursacht. Der Schadenswert setzt sich aus dem entsprechenden Schadenswürfel der Waffe und dem Modifikator des verwendeten Attributs zusammen (z. B. Stärke für Nahkampfangriffe).
+\item Schaden anwenden: Der ermittelte Schaden wird von den Trefferpunkten (Hit Points) des Ziels abgezogen.
+\end{enumerate}
+Besondere Angriffe oder Fähigkeiten können zusätzliche Effekte oder Boni auf den Angriff oder Schaden gewähren.
+
+
+
+\topic{Ausweichen}{dodge}
+Bis zum Beginn des eigenen nächsten Zuges haben Angriffe gegen den Charakter \linktopic{Nachteil}{disadvantage}, solange man den Angreifer sehen kann. Bei \linktopic{Rettungswürfen}{savingthrow} auf Geschicklichkeit hat man \linktopic{Vorteil}{advantage}. Sollte man Kampfunfähig werden oder die \linktopic{Bewegungsrate}{movement} auf 0 Sinken, verliert man diese Vorzüge.
+
+
+
+\topic{Bewegung}{movement}
+Du kannst dich so weit bewegen, wie es deine Bewegungsrate zulässt. Hinzu können weitere Boni kommen. Die Aktion \linktopic{Spurt}{dash} kann deine Bewegungsrate erhöhen.
+
+
+
+\topic{Bonusaktion}{bonusaction}
+Eine Bonusaktion kann nur genutzt werden, wenn eine Fähigkeit, ein Zauber oder eine Klassenmerkmal es explizit erlaubt. Sie ist nicht zu verwechseln mit der regulären \linktopic{Aktion}{combatactions}. Ein Charakter kann pro Zug nur eine Bonusaktion verwenden, und wenn er keine Fähigkeit oder Handlung hat, die eine Bonusaktion erlaubt, kann er auch keine ausführen. Wird ein Charakter daran gehindert eine \linktopic{Aktion}{combatactions} auszuführen, so darf er auch keine Bonusaktion nutzen.
+
+
+
+\topic{Gegenstand verwenden}{useitem}
+Gegenstand verwenden, welcher eine Aktion erfordert.
+
+
+
+\topic{Gelegenheitsangriff}{aoo}
+Bewegt sich eine Kreatur aus der Nahkampfreichweite eienes Gegners, so kann dieser einen Nahkampfangriff als \linktopic{Reaktion}{reaction} gegen diesen durchführen.
+
+
+
+\topic{Helfen}{help}
+Verwende die Aktion um einen Verbündeten zu Unterstützen. Dieser erhält Vorteil bei seinem nächsten Attributswurf. Die Aktion kann auch zur Ablenkung eines Gegners (in 1,5m Entfernung) eingesetzt werden. Dieser erhält beim nächsten Angriff gegen das Ziel \linktopic{Vorteil}{advantage}.
+
+
+
+\topic{Initiative}{initiative}
+\begin{itemize}
+\item $W20 + Geschicklichkeitsmodifikator + weitere Modifikatoren$
+\end{itemize}
+
+Initiative bestimmt die Reihenfolge, in der Charaktere und Gegner im Kampf handeln. Jeder würfelt einen 20-seitigen Würfel (W20) und addiert seinen Initiativebonus. Die Ergebnisse werden in absteigender Reihenfolge sortiert, und so wird die Reihenfolge der Aktionen festgelegt.
+
+Der Initiativebonus ist der Wert, den ein Charakter zu seinem Wurf für die Initiative addiert. Er setzt sich aus dem Geschicklichkeitsmodifikator (Dexterity Modifier) und gegebenenfalls anderen Boni zusammen, die durch Fähigkeiten, Zauber oder Ausrüstung gewährt werden. Zum Beispiel, wenn ein Charakter einen Geschicklichkeitsmodifikator von +2 hat, dann ist sein Initiativebonus ebenfalls +2.
+
+
+
+\topic{Konzentration}{concentration}
+Während der Zauberer einen Zauber mit Konzentration wirkt, kann er keinen weiteren Zauber mit Konzentration wirken, ohne den ersten zu beenden. Außerdem muss der Zauberer bei erlittenem Schaden einen \linktopic{Konstitutionsrettungswurf}{constitutioncheck} (SG-10 oder hälfte des erlittenen Schadens, höheres der beiden) bestehen, um die Konzentration aufrechtzuerhalten. Wenn der Wurf scheitert, endet der Zauber. Bei starker Ablenkung muss ein \linktopic{Konstitutionsrettungswurf}{constitutioncheck} (SG-10) bestanden werden.
+
+
+
+\topic{Kritischer Schaden}{crit}
+Bei einem kritischen Treffer wird der Schaden verdoppelt, indem alle Schadenswürfel des Angriffs zweimal geworfen werden. Das bedeutet, dass du die normalen Schadenswürfel einmal für den normalen Schaden und einmal zusätzlich für den kritischen Schaden würfelst. Danach werden die Ergebnisse addiert. Der Schadensbonus durch Attribute oder andere Effekte wird jedoch nur einmal addiert.
+
+
+
+\topic{Reaktion}{reaction}
+Ein Charakter kann pro Runde eine Reaktion einsetzen. Beispiele dafür sind \linktopic{Gelegenheitsangriffe}{aoo} oder die Reaktion auf die er sich aktiv \linktopic{vorbereitet}{ready}.
+
+
+
+\topic{Rückzug}{disengage}
+Bis zum Ende der Runde können keine \linktopic{Gelegenheitsangriffe}{aoo} gegen den Charakter durchgeführt werden.
+
+
+
+\topic{Suchen}{search}
+Du nutzt deine Aktion um nach etwas zu suchen. Dies kann in einem benötigten Attributswurf enden.
+
+
+
+\topic{Spurt}{dash}
+Der Charakter erhält eine zusätzliche Bewegungsrate + Modifikatoren
+
+Beispiel: Normale Bewegungsrate ist 9m, nach Einsatz von Spurt kann der Charahter sich 9m bewegen.
+
+
+
+\topic{Verstecken}{hide}
+Du kannst versuchen dich zu verstecken, die Umstände dafür müssen jedoch gegeben sein (man kann sich nicht auf offenem Feld in den Augen eines Gegners verstecken). Normalerweise musst du einen \linktopic{Heimlichkeitswurf}{stealthcheck} machen. Gegner die dich aktiv suchen machen einen \linktopic{Wahrnehmungswurf}{perceptioncheck} gegen deinen gewürfelten Wert. Bei Erfolg entdecken sie dich. Gegner die nicht aktiv nach dir suchen, können dich entdecken wenn ihre \linktopic{passive Wahrnehmung}{passiveperception} höher als dein gewürfelter Wert ist. Versucht dich ein Gegner anzugreifen während du versteckt bist ist er im \linktopic{Nachteil}{disadvantage} (er rät deine Position oder hört dich vielleicht. Es sollte auf die Logik im Spiel geachtet werden. Wenn ein Gegner sieht wie ich mich hinter einem Stein verstecke, so bin ich nicht versteckt wenn ich wieder dahinter hervor komme.
+
+
+
+\topic{Vorbereiten}{ready}
+Du nennst ein wahrnehmbares Ereignis, welches eintreten soll, sowie deine folgende \linktopic{Reaktion}{reaction} darauf. Sollte das Ereignis vor deinem nächsten Zug eintreten, darfst du mit deiner genannten Aktion reagieren. Zauber sind hier gesondert zu betrachten, siehe \linktopic{Zauber als Reaktion}{castreaction}.
+
+Beispiel: Wenn der Goblin auf die Falltür tritt betätige ich den Schalter.
+
+
+
+\topic{Zauber als Reaktion}{castreaction}
+Es können nur Zauber mit einer Vorbereitungszeit von maximal einer Runde als \linktopic{Reaktion}{reaction} genutzt werden. Der Zauber erfordert bis zum Zeitpunkt der \linktopic{Reaktion}{reaction} \linktopic{Konzentration}{concentration}. Das bedeutet, dass der Zauber unterbrochen werden kann und so die \linktopic{Reaktion}{reaction} nicht mehr genutzt werden kann.
+
+
+
+\topic{Zauber wirken}{castingspell}
+Zaubertrick oder Zauber wirken.
+
+Sollte ein Zauber als Bonusaktion gewirkt werden, so kann danach kein Zauber mehr gewirkt werden. Es kann jedoch ein Zaubertrick als Aktion gewirkt werden, falls diese noch nicht verbraucht wurde.
