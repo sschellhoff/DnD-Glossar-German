@@ -1,3 +1,11 @@
+\topic{Ablauf}{fightrules}
+Ein Kampf beginnt normalerweise damit, dass die Reihenfolge durch die \linktopic{Initiativwürfe}{initiative} bestimmt wird.
+
+Danach sind alle Beteiligten in der festgelegten Reihenfolge am Zug, bis der Kampf beendet wird, das heißt eine Seite Kampfunfähig ist, aus dem Kampf geflohen ist oder sich durch Rollenspiel aus dem Kampf gewunden hat.
+Ein Charakter kann darf sich pro Runde \linktopic{bewegen}{movement}, eine \linktopic{Aktion}{combatactions} einsetzen, eine \linktopic{Reaktion}{reaction} nutzen, sowie eine \linktopic{Bonusaktion}{bonusaction} verwenden, falls diese vorhanden ist.
+
+
+
 \topic{Aktionen im Kampf}{combatactions}
 \begin{itemize}
 \item \linktopic{Angriff}{attacking}
@@ -25,22 +33,28 @@ Ein Angriff funktioniert in mehreren Schritten:
 
 \begin{enumerate}
 
-\item Angriffswurf: Der Angreifer würfelt einen 20-seitigen Würfel (W20) und addiert seinen Angriffsbonus. Der Angriffsbonus setzt sich aus dem relevanten Attributsmodifikator (z. B. Stärke für Nahkampfwaffen oder Geschicklichkeit für Finesse- oder Fernkampfwaffen) und dem Proficiency Bonus zusammen, falls der Charakter mit der Waffe geübt ist. Ein Würfelergebnis von 1 verfehlt das Ziel immer. Ein Würfelergebnis von 20 trifft immer \linktopic{crit}{kritisch}.
-\item Trefferwert vergleichen: Das Ergebnis der Angriffsrolle wird mit der Rüstungsklasse (Armor Class, AC) des Ziels verglichen. Wenn das Ergebnis gleich oder höher ist als die AC, trifft der Angriff.
+\item Angriffswurf: Der Angreifer würfelt einen 20-seitigen Würfel (W20) und addiert seinen Angriffsbonus. Der Angriffsbonus setzt sich aus dem relevanten Attributsmodifikator (z. B. Stärke für Nahkampfwaffen oder Geschicklichkeit für Finesse- oder Fernkampfwaffen) und dem Übungsbonus zusammen, falls der Charakter mit der Waffe geübt ist. Ein Würfelergebnis von 1 verfehlt das Ziel immer. Ein Würfelergebnis von 20 trifft immer \linktopic{crit}{kritisch}.
+\item Trefferwert vergleichen: Das Ergebnis der Angriffsrolle wird mit der \linktopic{Rüstungsklasse}{armorclass} des Ziels verglichen. Wenn das Ergebnis gleich oder höher ist als die \linktopic{Rüstungsklasse}{armorclass}, trifft der Angriff.
 \item Schadenswurf: Wenn der Angriff trifft, würfelt der Angreifer den Schaden, den die Waffe verursacht. Der Schadenswert setzt sich aus dem entsprechenden Schadenswürfel der Waffe und dem Modifikator des verwendeten Attributs zusammen (z. B. Stärke für Nahkampfangriffe).
 \item Schaden anwenden: Der ermittelte Schaden wird von den Trefferpunkten (Hit Points) des Ziels abgezogen.
 \end{enumerate}
 Besondere Angriffe oder Fähigkeiten können zusätzliche Effekte oder Boni auf den Angriff oder Schaden gewähren.
+
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
 
 
 
 \topic{Ausweichen}{dodge}
 Bis zum Beginn des eigenen nächsten Zuges haben Angriffe gegen den Charakter \linktopic{Nachteil}{disadvantage}, solange man den Angreifer sehen kann. Bei \linktopic{Rettungswürfen}{savingthrow} auf Geschicklichkeit hat man \linktopic{Vorteil}{advantage}. Sollte man Kampfunfähig werden oder die \linktopic{Bewegungsrate}{movement} auf 0 Sinken, verliert man diese Vorzüge.
 
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
+
 
 
 \topic{Bewegung}{movement}
-Du kannst dich so weit bewegen, wie es deine Bewegungsrate zulässt. Hinzu können weitere Boni kommen. Die Aktion \linktopic{Spurt}{dash} kann deine Bewegungsrate erhöhen.
+Du kannst dich so weit bewegen, wie es deine Bewegungsrate zulässt. Hinzu können weitere Boni kommen. Die Aktion \linktopic{Spurt}{dash} kann deine Bewegungsrate erhöhen. Das bewegen durch \linktopic{schwieriges Gelände}{difficultterrain} kostet die doppelte Bewegungsrate.
+
+Beispiel: Ein Spieler mit einer Bewegungsrate von 9 Metern bewegt sich 3 Meter über eine Wiese und überquert dann einen 4 Meter breiten Bach, welcher als \linktopic{schwieriges Gelände}{difficultterrain} zählt. Er benötigt hierzu eine Bewegungsrate von 11 Metern. Er setzt als \linktopic{Aktion}{combatactions} \linktopic{Sprint}{} ein und kann sich so 9 + 9 Meter bewegen. 3 Meter verbraucht er bei der Bewegung über die Wiese. 8 Meter für den Bach, da dies \linktopic{schwieriges Gelände}{difficultterrain} ist. So bleiben ihm 7 Meter übrig.
 
 
 
@@ -52,6 +66,8 @@ Eine Bonusaktion kann nur genutzt werden, wenn eine Fähigkeit, ein Zauber oder 
 \topic{Gegenstand verwenden}{useitem}
 Gegenstand verwenden, welcher eine Aktion erfordert.
 
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
+
 
 
 \topic{Gelegenheitsangriff}{aoo}
@@ -61,6 +77,8 @@ Bewegt sich eine Kreatur aus der Nahkampfreichweite eienes Gegners, so kann dies
 
 \topic{Helfen}{help}
 Verwende die Aktion um einen Verbündeten zu Unterstützen. Dieser erhält Vorteil bei seinem nächsten Attributswurf. Die Aktion kann auch zur Ablenkung eines Gegners (in 1,5m Entfernung) eingesetzt werden. Dieser erhält beim nächsten Angriff gegen das Ziel \linktopic{Vorteil}{advantage}.
+
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
 
 
 
@@ -93,10 +111,31 @@ Ein Charakter kann pro Runde eine Reaktion einsetzen. Beispiele dafür sind \lin
 \topic{Rückzug}{disengage}
 Bis zum Ende der Runde können keine \linktopic{Gelegenheitsangriffe}{aoo} gegen den Charakter durchgeführt werden.
 
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
+
+
+
+\topic{Rüstungsklasse}{armorclass}
+Die Rüstungsklasse (auch Armorclass oder AC) gibt an wie schwer es ist eine Kreatur mit einem \linktopic{Angriff}{attacking} zu treffen. Die Rüstungsklasse setzt sich aus folgenden Dingen zusammen:
+\begin{itemize}
+\item Grundwert von 10
+\item Rüstungsbonus bestimmt durch die getragene Rüstung
+\item Geschicklichkeitsmodifikator bei leichter oder mittlerer Rüstung, jedoch nicht bei schwerer Rüstung. Jede Rüstung hat einen Maximalwert, der bei dem Modifikator nicht überschritten werden kann.
+\item Schild welches normalerweise einen Wert von 2 gibt
+\item Zauber und Fähigkeiten welche die Rüstungsklasse erhöhen
+\end{itemize}
+
+
+
+\topic{Schwieriges Gelände}{difficultterrain}
+Manche Geländearten sind schwerer zu durchqueren. Hier benötigt eine Kreatur die doppelte Bewegungsrate. Hierzu Zählt Gelände wie Sumpf, aber auch Hindernisse, welche Überquert werden müssen. Zusätzlich zu den verdoppelten Bewegungskosten können weitere Attributswürfe von Nöten sein.
+
 
 
 \topic{Suchen}{search}
 Du nutzt deine Aktion um nach etwas zu suchen. Dies kann in einem benötigten Attributswurf enden.
+
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
 
 
 
@@ -105,10 +144,14 @@ Der Charakter erhält eine zusätzliche Bewegungsrate + Modifikatoren
 
 Beispiel: Normale Bewegungsrate ist 9m, nach Einsatz von Spurt kann der Charahter sich 9m bewegen.
 
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
+
 
 
 \topic{Verstecken}{hide}
 Du kannst versuchen dich zu verstecken, die Umstände dafür müssen jedoch gegeben sein (man kann sich nicht auf offenem Feld in den Augen eines Gegners verstecken). Normalerweise musst du einen \linktopic{Heimlichkeitswurf}{stealthcheck} machen. Gegner die dich aktiv suchen machen einen \linktopic{Wahrnehmungswurf}{perceptioncheck} gegen deinen gewürfelten Wert. Bei Erfolg entdecken sie dich. Gegner die nicht aktiv nach dir suchen, können dich entdecken wenn ihre \linktopic{passive Wahrnehmung}{passiveperception} höher als dein gewürfelter Wert ist. Versucht dich ein Gegner anzugreifen während du versteckt bist ist er im \linktopic{Nachteil}{disadvantage} (er rät deine Position oder hört dich vielleicht. Es sollte auf die Logik im Spiel geachtet werden. Wenn ein Gegner sieht wie ich mich hinter einem Stein verstecke, so bin ich nicht versteckt wenn ich wieder dahinter hervor komme.
+
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
 
 
 
@@ -116,6 +159,8 @@ Du kannst versuchen dich zu verstecken, die Umstände dafür müssen jedoch gege
 Du nennst ein wahrnehmbares Ereignis, welches eintreten soll, sowie deine folgende \linktopic{Reaktion}{reaction} darauf. Sollte das Ereignis vor deinem nächsten Zug eintreten, darfst du mit deiner genannten Aktion reagieren. Zauber sind hier gesondert zu betrachten, siehe \linktopic{Zauber als Reaktion}{castreaction}.
 
 Beispiel: Wenn der Goblin auf die Falltür tritt betätige ich den Schalter.
+
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
 
 
 
@@ -128,3 +173,5 @@ Es können nur Zauber mit einer Vorbereitungszeit von maximal einer Runde als \l
 Zaubertrick oder Zauber wirken.
 
 Sollte ein Zauber als Bonusaktion gewirkt werden, so kann danach kein Zauber mehr gewirkt werden. Es kann jedoch ein Zaubertrick als Aktion gewirkt werden, falls diese noch nicht verbraucht wurde.
+
+Für weitere Aktionen, siehe \linktopic{Aktionen im Kampf}{combatactions}.
